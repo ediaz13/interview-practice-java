@@ -1,11 +1,10 @@
 package hashtables;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class BorrarAbecedario {
     public String borrarAbecedario(String texto) {
-        Map<Character, Integer> contadorLetras = new HashMap<>();
+        HashMap<Character, Integer> contadorLetras = new HashMap<>();
 
         // Contar la frecuencia de cada letra en el texto
         for (char letra : texto.toCharArray()) {
@@ -16,7 +15,7 @@ public class BorrarAbecedario {
 
         // Construir el nuevo string eliminando la primera aparición de cada letra
         for (char letra : texto.toCharArray()) {
-            if (contadorLetras.containsKey(letra) && contadorLetras.get(letra) > 0) {
+            if (contadorLetras.containsKey(letra) && contadorLetras.get(letra) > 1) {
                 resultado.append(letra);
                 contadorLetras.put(letra, contadorLetras.get(letra) - 1);
             }

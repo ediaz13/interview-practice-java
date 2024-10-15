@@ -1,4 +1,4 @@
-package hashtables;
+package hashtables.countingfrequencies;
 
 import java.util.HashMap;
 

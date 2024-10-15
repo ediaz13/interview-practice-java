@@ -1,4 +1,4 @@
-package hashtables;
+package hashtables.twosum;
 
 import java.util.ArrayList;
 import java.util.HashMap;

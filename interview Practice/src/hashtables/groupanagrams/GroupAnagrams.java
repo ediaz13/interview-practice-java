@@ -1,4 +1,4 @@
-package hashtables;
+package hashtables.groupanagrams;
 
 import java.util.*;
 
